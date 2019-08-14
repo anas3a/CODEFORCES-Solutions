@@ -22,6 +22,11 @@ int main()
     if (n % 2 == 0)
     {
         n1 = n2 = n / 2;
+        while(!(cmpst(n1) && cmpst(n2)))
+        {
+            n1--;
+            n2++;
+        }
     }
     else
     {
